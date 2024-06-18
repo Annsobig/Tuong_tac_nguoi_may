@@ -1,0 +1,314 @@
+.Box1{
+    display: flex;
+   margin-top: 10px;
+   justify-content: flex-end;
+   padding: 0;
+}
+
+#Box1-left{
+    margin-top: 7px;
+}
+
+#Box1-right{
+    margin-left: 40px;
+}
+
+.Box2{
+    background-color: rgba(224, 33, 33, 1);
+    display: flex;
+    justify-content:space-between;
+    padding: 15px 15px 0 15px;
+}
+
+#custom-link{
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0 10px;
+}
+
+.Box2-left{
+    margin-left: 50px;
+}
+
+.Box2-right{
+    margin-right: 30px;
+    margin-top: 30px;
+    
+}
+
+.Box-add{
+    display: flex;
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: rgba(217, 217, 217, 1);
+}
+
+#link{
+    color: black    ;
+}
+
+.Gio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Màu nền trang web là màu trắng */
+}
+
+.container {
+    max-width: 97%;
+    margin: 20px auto; /* Căn giữa container */
+    background-color: rgba(217, 217, 217, 1); /* Màu nền trong hộp */
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.button-container {
+    text-align:end; /* Căn giữa nút */
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+button#addProductBtn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgba(217, 217, 217, 1);
+    color: #fff;
+    border: none;
+}
+
+button#addProductBtn:hover {
+    background-color: #45a049;
+}
+
+.table-container {
+    max-width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate; /* Sử dụng border-collapse: separate để tách các ô */
+    border-spacing: 0 10px; /* Khoảng cách giữa các dòng là 10px */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Form styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.closeBtn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group-inline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group-inline .form-group {
+    flex: 1 1 48%; /* Đảm bảo các phần tử có chiều rộng bằng nhau và có khoảng cách giữa chúng */
+}
+
+.form-group label {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-group input {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+button[type="submit"],
+button[type="button"] {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+    background-color: #45a049;
+}
+
+button#updateBtn,
+button#deleteBtn {
+    display: none;
+    background-color: #f44336;
+}
+
+button#updateBtn:hover,
+button#deleteBtn:hover {
+    background-color: #da190b;
+}
+
+#productBrand{
+    width: 150px;
+    height: 30px;
+    margin-right: 59px;
+    border-radius: 4px;
+}
+#productType{
+    width: 150px;
+    height: 30px;
+    border-radius: 4px;
+}
+#productConfig{
+    width: 400px;
+    height: 40px;
+    border-radius: 4px;
+}
+#screenType{
+    width: 150px;
+    height: 30px;
+    margin-right: 59px;
+    border-radius: 4px;
+}
+#batteryType{
+    width: 150px;
+    height: 30px;
+    border-radius: 4px;
+}
+#ram{
+    width: 150px;
+    height: 30px;
+    margin-right: 59px;
+    border-radius: 4px;
+}
+#condition{
+    width: 150px;
+    height: 30px;
+    border-radius: 4px;
+}
+#yearOfManufacture{
+    width: 150px;
+    height: 30px;
+    margin-right: 59px;
+    border-radius: 4px;
+}
+#color{
+    width: 150px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+/* Đuôi */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-left img {
+    height: 300px; /* Adjust height as needed */
+}
+
+.footer-right {
+    display: flex;
+}
+
+.footer-column {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.footer-column h3 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}

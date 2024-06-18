@@ -1,0 +1,346 @@
+.Box1{
+    display: flex;
+   margin-top: 10px;
+   justify-content: flex-end;
+   padding: 0;
+}
+
+#Box1-left{
+    margin-top: 7px;
+}
+
+#Box1-right{
+    margin-left: 10px;
+}
+
+.Box2{
+    background-color: rgba(224, 33, 33, 1);
+    display: flex;
+    justify-content:space-between;
+    padding: 15px 15px 0 15px;
+}
+
+#custom-link{
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0 10px;
+}
+
+.Box2-left{
+    margin-left: 50px;
+}
+
+.Box2-right{
+    margin-right: 30px;
+    margin-top: 30px;
+    
+}
+
+.Box3-center{
+    margin: 30px auto 16px auto;
+    max-width: 95%;
+    height: 60px;
+    border-radius: 15px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+#child{
+    padding: 20px 10px 0 10px;
+    font-size: 30px;
+    font-weight: 450;
+    color: black;
+}
+
+#menuItem1{
+    padding: 20px 10px 0 10px;
+    font-size: 30px;
+    font-weight: 450; 
+    color: black;  
+}
+
+#menuItem2{
+    padding: 20px 10px 0 10px;
+    font-size: 30px;
+    font-weight: 450; 
+    color: black;  
+}
+
+#Box3{
+    display: inline-block;
+    position: relative;
+}
+
+
+ul.dynamic-list {
+    list-style-type: none;
+    padding: 10px;
+    background-color: #d6c7c7; /* Màu nền của hộp danh sách */
+    border: 1px solid #d6c7c7; /* Đường viền của hộp danh sách */
+    border-radius: 15px; /* Bo tròn góc của hộp danh sách */
+    width: 1300px; /* Độ rộng của hộp danh sách */
+}
+
+ul.dynamic-list a:hover {
+    background-color: #a38016; /* Màu nền của mục danh sách khi hover */
+}
+
+.Box4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Box4-center{  
+  max-width: 95%;
+  display: flex;
+  overflow: hidden;
+    border: 5px solid #a7b6a7; /* Đặt viền cho hộp */
+    border-radius: 10px; /* Bo tròn góc của hộp */
+}
+
+.Box4-left{
+  max-width: 66,66%;
+  margin: 10px;
+  width: 900px;
+  overflow: hidden;
+  border: 5px solid #bfd5c0; /* Đặt viền cho hộp */
+  border-radius: 20px; /* Bo tròn góc của hộp */
+}
+
+.Box4-right{
+    max-width: 33,33%;
+    margin: 10px;
+}
+
+#Box4-1{
+    overflow: hidden;
+    border: 5px solid #c3cfc3; /* Đặt viền cho hộp */
+    border-radius: 20px; /* Bo tròn góc của hộp */
+    margin-bottom: 10px;
+}
+
+#Box4-2{
+    overflow: hidden;
+    border: 5px solid #acc3ad; /* Đặt viền cho hộp */
+    border-radius: 20px; /* Bo tròn góc của hộp */
+    margin-bottom: 10px;
+}
+
+#Box4-3{    
+    overflow: hidden;
+    border: 5px solid #b5cab6; /* Đặt viền cho hộp */
+    border-radius: 20px; /* Bo tròn góc của hộp */
+}
+
+#clickableImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Đảm bảo ảnh lấp đầy hộp và giữ tỷ lệ khung hình */
+}
+
+.Box5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.Box5-center{
+    width: 1000px;
+    background-color: #a7b6a7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #b5cab6; /* Đặt viền cho hộp */
+    border-radius: 20px; /* Bo tròn góc của hộp */
+}
+
+/* CSS cho các ô điện thoại */
+/* CSS cho container */
+.Box6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.phone {
+    width: 230px;
+    height: 295px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.phone img {
+    max-width: 230px;
+    max-height: 295px;
+    object-fit: cover;
+}
+
+.phone .name {
+    margin-top: 19px;
+    font-size: 1em;
+}
+
+
+
+/* CSS cho nút mũi tên */
+.arrow {
+    background-color: #fff;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 0 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow.left {
+    left: 20px;
+}
+
+.arrow.right {
+    right: 20px;
+}
+
+#phoneContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+}
+
+.Box7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.Box7-center{
+    width: 1300px;
+    background-color: #a7b6a7;
+    display: flex;
+    justify-content:space-between;
+    /* align-items: center; */
+    border: 5px solid #b5cab6; /* Đặt viền cho hộp */
+    border-radius: 20px; /* Bo tròn góc của hộp */
+}
+
+.Box8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.Box8-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+}
+
+#a {
+    width: 230px;
+    height: 295px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#a p{
+    margin-top: 19px;
+}
+
+#b {
+    width: 230px;
+    height: 295px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#b p{
+    margin-top: 19px;
+}
+
+/* Đuôi */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-left img {
+    height: 300px; /* Adjust height as needed */
+}
+
+.footer-right {
+    display: flex;
+}
+
+.footer-column {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.footer-column h3 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}

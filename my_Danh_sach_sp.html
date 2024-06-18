@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm</title>
+    <link rel="stylesheet" href="assets/bootstrap-4.6.2-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/my_Danh_sach_sp.css">
+
+</head>
+<body>
+    <div class="Box1" >
+        <i class="fa fa-phone" id="Box1-left" aria-hidden="true"></i>
+        <p id="Box1-right">Hotline: 00008888</p>
+    </div>
+
+    <div class="Box2">
+        <div class="Box2-left">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.y0WHEh-3fIGMI7RPfTV48gHaHa&pid=Api&P=0&h=180 " width="75px" height="65px"  alt="Logo" />
+        </div>
+        <div class="Box2-right">
+            <ul>
+                <a href="https://www.example.com" id="custom-link">TRANG CHỦ</a>
+                <a href="https://www.example.com" id="custom-link">SẢN PHẨM</a>
+                <a href="https://www.example.com" id="custom-link">HỆ THỐNG CHI NHÁNH</a>
+                <a href="https://www.example.com" id="custom-link">LIÊN HỆ</a>
+                <label for="Search"></label>
+                <input type="text" id="Search" name="Search">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <a href="https://www.example.com" id="custom-link">GIỎ HÀNG</a>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <a href="https://www.example.com" id="custom-link">ĐĂNG NHẬP</a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="Box-add">
+        <a href="my_Trang_chu.html" id="link">Trang chủ  </a>
+        <p> ></p>
+        <a href="https://www.example.com" id="link">Danh mục  </a>
+        <p> ></p>
+        <a href="https://www.example.com" id="link">Tìm kiếm kết quả  </a>
+    </div>
+
+    <div class="Gio">
+        <h4>Danh sách sản phẩm  </h4>
+    </div>
+
+    <div class="button-container">
+        <button id="addProductBtn">Thêm</button>
+    </div>
+    <div class="container">
+        <div class="table-container">
+            <table id="productTable">
+                <thead>
+                    <tr>
+                        <th>Số thứ tự</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Năm sản xuất</th>
+                        <th>Hãng sản phẩm</th>
+                        <th>Giá sản phẩm</th>
+                        <th>Tình trạng</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Sản phẩm A</td>
+                        <td>2021</td>
+                        <td>Hãng A</td>
+                        <td>10,000,000 VND</td>
+                        <td>Mới</td>
+                        <td>
+                            <button class="viewDetailBtn">Xem </button>
+                            <button class="editBtn">Sửa</button>
+                            <button class="deleteBtn">Xóa</button>
+                        </td>
+                        <td style="display:none;">{
+                            "name": "Sản phẩm A",
+                            "brand": "Hãng A",
+                            "type": "Điện thoại",
+                            "config": "Cấu hình A",
+                            "screen": "OLED",
+                            "battery": "4000mAh",
+                            "ram": "8GB",
+                            "condition": "Mới",
+                            "year": "2021",
+                            "color": "Đen",
+                            "quantity": "5",
+                            "image": "imageA.jpg",
+                            "price": "10,000,000 VND"
+                        }</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Sản phẩm B</td>
+                        <td>2020</td>
+                        <td>Hãng B</td>
+                        <td>8,000,000 VND</td>
+                        <td>Cũ</td>
+                        <td>
+                            <button class="viewDetailBtn">Xem</button>
+                            <button class="editBtn">Sửa</button>
+                            <button class="deleteBtn">Xóa</button>
+                        </td>
+                        <td style="display:none;">{
+                            "name": "Sản phẩm B",
+                            "brand": "Hãng B",
+                            "type": "Máy tính bảng",
+                            "config": "Cấu hình B",
+                            "screen": "LCD",
+                            "battery": "5000mAh",
+                            "ram": "6GB",
+                            "condition": "Cũ",
+                            "year": "2020",
+                            "color": "Trắng",
+                            "quantity": "3",
+                            "image": "imageB.jpg",
+                            "price": "8,000,000 VND"
+                        }</td>
+                    </tr>
+                    <!-- Thêm các dòng sản phẩm mẫu khác nếu cần -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="productForm" class="modal">
+            <div class="modal-content">
+                <span class="closeBtn">&times;</span>
+                <h2 id="formTitle">Thêm Sản Phẩm</h2>
+                <form id="addProductForm">
+                    <div class="form-group">
+                        <label for="productName">Tên sản phẩm:</label>
+                        <input type="text" id="productName" name="productName" required>
+                    </div>
+                    <div class="form-group-inline">
+                        <div class="form-group">
+                            <label for="productBrand">Hãng sản phẩm:</label>
+                            <select id="productBrand" name="productBrand" required>
+                                <option value="Hãng A">Hãng A</option>
+                                <option value="Hãng B">Hãng B</option>
+                                <!-- Thêm các option khác nếu cần -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="productType">Loại máy:</label>
+                            <select id="productType" name="productType" required>
+                                <option value="Điện thoại">Điện thoại</option>
+                                <option value="Máy tính bảng">Máy tính bảng</option>
+                                <!-- Thêm các option khác nếu cần -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="productConfig">Cấu hình:</label>
+                        <select id="productConfig" name="productConfig" required>
+                            <option value="Cấu hình A">Cấu hình A</option>
+                            <option value="Cấu hình B">Cấu hình B</option>
+                            <!-- Thêm các option khác nếu cần -->
+                        </select>
+                    </div>
+                    <div class="form-group-inline">
+                        <div class="form-group">
+                            <label for="screenType">Loại màn:</label>
+                            <select id="screenType" name="screenType" required>
+                                <option value="OLED">OLED</option>
+                                <option value="LCD">LCD</option>
+                                <!-- Thêm các option khác nếu cần -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="batteryType">Loại pin:</label>
+                            <select id="batteryType" name="batteryType" required>
+                                <option value="4000mAh">4000mAh</option>
+                                <option value="5000mAh">5000mAh</option>
+                                <!-- Thêm các option khác nếu cần -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group-inline">
+                        <div class="form-group">
+                            <label for="ram">Bộ nhớ RAM:</label>
+                            <select id="ram" name="ram" required>
+                                <option value="8GB">8GB</option>
+                                <option value="6GB">6GB</option>
+                                <!-- Thêm các option khác nếu cần -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="condition">Tình trạng:</label>
+                            <select id="condition" name="condition" required>
+                                <option value="Mới">Mới</option>
+                                <option value="Cũ">Cũ</option>
+                                <!-- Thêm các option khác nếu cần -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group-inline">
+                        <div class="form-group">
+                            <label for="yearOfManufacture">Năm sản xuất:</label>
+                            <select id="yearOfManufacture" name="yearOfManufacture" required>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <!-- Thêm các option khác nếu cần -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="color">Màu sắc:</label>
+                            <input type="text" id="color" name="color" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Số lượng máy:</label>
+                        <input type="number" id="quantity" name="quantity" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="image">Hình ảnh:</label>
+                        <input type="text" id="image" name="image" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Giá:</label>
+                        <input type="text" id="price" name="price" required>
+                    </div>
+                    <input type="hidden" id="updateRowIndex" name="updateRowIndex">
+                    <button type="submit" id="okBtn">OK</button>
+                    <button type="button" id="cancelBtn">Hủy</button>
+                    <button type="button" id="updateBtn">Cập nhật</button>
+                    <button type="button" id="deleteBtn">Xóa</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.y0WHEh-3fIGMI7RPfTV48gHaHa&pid=Api&P=0&h=180" width="300px" alt="Logo">
+            </div>
+            <div class="footer-right">
+                <div class="footer-column">
+                    <h3>Thông tin và chính sách hỗ trợ</h3>
+                    <ul>
+                        <li>Thông tin</li>
+                        <li>Thông tin</li>
+                        <li>Thông tin</li>
+                        <li>Thông tin</li>
+                        <li>Thông tin</li>
+                        <li>Thông tin</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Dịch vụ và thông tin khác</h3>
+                    <ul>
+                        <li>thông tin</li>
+                        <li>thông tin</li>
+                        <li>thông tin</li>
+                        <li>thông tin</li>
+                        <li>thông tin</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Liên hệ</h3>
+                    <ul>
+                        <li>thông tin</li>
+                        <li>thông tin</li>
+                        <li>thông tin</li>
+                        <li>thông tin</li>
+                        <li>thông tin</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="assets/my_Danh_sach_sp.js"></script>
+</body>
+</html>
