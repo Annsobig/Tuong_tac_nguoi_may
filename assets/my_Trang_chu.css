@@ -344,3 +344,95 @@ ul.dynamic-list a:hover {
 .footer-column ul li {
     margin-bottom: 5px;
 }
+
+/* hộp mes */
+.messenger-icon {
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.messenger-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.chatbox {
+    position: fixed;
+    bottom: 120px;
+    right: 30px;
+    width: 340px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+}
+
+.chatbox-header {
+    background-color: #d81111;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.chatbox-body {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbox-footer {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.chatbox-footer input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chatbox-footer button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #0078FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chatbox-footer button:hover {
+    background-color: #005bb5;
+}
+
+.message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.message.left {
+    background-color: #0078FF;
+    color: white;
+    align-self: flex-start;
+}
+
+.message.right {
+    background-color: #f1f1f1;
+    color: black;
+    align-self: flex-end;
+    border: 1px solid #ccc;
+}
